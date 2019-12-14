@@ -26,8 +26,8 @@ website = requests.get(“https://www.google.com”)
 ### BeautifulSoup - Python Library for Web Scraping 
 #### Making the soup 
 ```
- from bs4 import BeautifulSoup
- soup = BeautifulSoup(“<html>data</html>")
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(“<html>data</html>")
 ```
 #### Prettify the soup - to turn a BS parse tree into a nicely formatted unicode string
 ```
@@ -35,8 +35,8 @@ soup.prettify()
 ```
 #### Find the first occurrence of a tag or find all of the tag’s occurrences, findAll() or find_all() returns all the tags and strings that match your filters.
 ```
-    soup.find(id=“link3")
-    soup.find_all('a')
+soup.find(id=“link3")
+soup.find_all('a')
 ```
 ### Pandas - DataFrames (used only for alignment in this project) 
 #### Create Data Frame and add data and column names
